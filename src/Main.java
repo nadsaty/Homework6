@@ -1,13 +1,19 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
 public class Main {
 
     public static void main(String[] args) {
         task1();
+        task2();
     }
     public static void task1 () {
-        System.out.println("Задача 1 \n");
+        System.out.println("\n Задача 1 \n Числа по порядку: \n");
         for (int i = 1; i <= 10; i = i + 1) {
+            System.out.println(i);
+        }
+    }
+
+    public static void task2 () {
+        System.out.println("\n Задача 2 \n Числа в обратном порядке: \n");
+        for (int i = 10; i >= 1; i = i - 1) {
             System.out.println(i);
         }
     }
