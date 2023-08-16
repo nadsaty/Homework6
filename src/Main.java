@@ -7,6 +7,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
     public static void task1 () {
         System.out.println("\n Задача 1 \n Числа по порядку: \n");
@@ -44,8 +45,15 @@ public class Main {
     }
 
     public static void task6 () {
-        System.out.println("\n Задача 6 \n Последовательность чисел от до 98: \n");
+        System.out.println("\n Задача 6 \n Последовательность чисел от 7 до 98: \n");
         for (int  i = 7; i <= 98; i = i + 7) {
+            System.out.println(i);
+        }
+    }
+
+    public static void task7 () {
+        System.out.println("\n Задача 7 \n Последовательность чисел от 1 до 512: \n");
+        for (int  i = 1; i <= 512; i = i * 2) {
             System.out.println(i);
         }
     }
