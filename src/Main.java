@@ -8,6 +8,7 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
     }
     public static void task1 () {
         System.out.println("\n Задача 1 \n Числа по порядку: \n");
@@ -56,5 +57,16 @@ public class Main {
         for (int  i = 1; i <= 512; i = i * 2) {
             System.out.println(i);
         }
+    }
+
+    public static void task8 () {
+        System.out.println("\n Задача 8 \n Подсчет годовых накоплений: \n");
+        int cashSaving = 29000;
+        int total = 0;
+        for (int i = 1; i <= 12; i++) {
+            total = total + cashSaving;
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + total + " рублей");
+        }
+        System.out.println("Сумма накоплений за год: " + total + " рублей \n");
     }
 }
