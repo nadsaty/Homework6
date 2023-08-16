@@ -5,6 +5,7 @@ public class Main {
         task2();
         task3();
         task4();
+        task5();
     }
     public static void task1 () {
         System.out.println("\n Задача 1 \n Числа по порядку: \n");
@@ -31,6 +32,13 @@ public class Main {
         System.out.println("\n Задача 4 \n Числа в обратном порядке от 10 до -10: \n");
         for (int i = 10; i >= -10; i = i - 1) {
             System.out.println(i);
+        }
+    }
+
+    public static void task5 () {
+        System.out.println("\n Задача 5 \n Високосные года с 1904 по 2096 \n");
+        for (int  i = 1904; i <= 2096; i = i + 4) {
+            System.out.println("Високосные года - " + i);
         }
     }
 }
