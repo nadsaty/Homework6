@@ -73,7 +73,7 @@ public class Main {
     }
 
     public static void task9 () {
-        System.out.println("\n Задача 9 \n Подсчет годовых накоплений с процентами: \n");
+        System.out.println("\n Задача 9 \n Подсчет годовых накоплений с процентами:  \n");
         int cashSaving = 29000;
         int total = 0;
         int month = 1;
