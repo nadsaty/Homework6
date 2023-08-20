@@ -9,6 +9,8 @@ public class Main {
         task6();
         task7();
         task8();
+        task9();
+        task10();
     }
     public static void task1 () {
         System.out.println("\n Задача 1 \n Числа по порядку: \n");
@@ -63,10 +65,31 @@ public class Main {
         System.out.println("\n Задача 8 \n Подсчет годовых накоплений: \n");
         int cashSaving = 29000;
         int total = 0;
-        for (int i = 1; i <= 12; i++) {
+        for (int i = 1; i < 12; i = i + 1) {
             total = total + cashSaving;
             System.out.println("Месяц " + i + ", сумма накоплений равна " + total + " рублей");
         }
         System.out.println("Сумма накоплений за год: " + total + " рублей \n");
+    }
+
+    public static void task9 () {
+        System.out.println("\n Задача 9 \n Подсчет годовых накоплений с процентами: \n");
+        int cashSaving = 29000;
+        int total = 0;
+        int month = 1;
+        for (int i = 0; i < 12; i = i + 1) {
+            total = total + total / 100;
+            total = total + cashSaving;
+            month = i + 1;
+            System.out.println("Месяц " + month + ", сумма накоплений равна " + total + " рублей");
+        }
+        System.out.println("Сумма накоплений за год: " + total + " рублей \n");
+    }
+
+    public static void task10 () {
+        System.out.println("\n Задача 10 \n Таблица умножения: ");
+        for (int i = 1; i <= 10; i = i + 1) {
+            System.out.println("2 * " + i +  " = " + (i * 2));
+        }
     }
 }
